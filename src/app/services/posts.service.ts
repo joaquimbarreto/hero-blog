@@ -12,8 +12,8 @@ export class PostsService {
     return await response.json();
   }
 
-  async getAuthors() {
-    const response = await fetch('https://randomuser.me/api/?results=10');
+  async getUsers() {
+    const response = await fetch('https://jsonplaceholder.typicode.com/users');
     return await response.json();
   }
 

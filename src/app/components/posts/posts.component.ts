@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Author } from 'src/app/models/author';
 import { Post } from 'src/app/models/post';
+import { User } from 'src/app/models/user';
 import { PostsService } from 'src/app/services/posts.service';
 
 @Component({
@@ -13,14 +13,14 @@ export class PostsComponent implements OnInit {
   constructor(private postsService: PostsService) { }
 
   posts: Post[] = []
-  authors: Author[] = []
+  users: User[] = []
   isLoading: boolean = true
 
   ngOnInit() {
     this.postsService.getPosts().then(data => this.posts = data)
-    this.postsService.getAuthors().then(data => {
-      this.authors = data.results
-      this, this.isLoading = false
+    this.postsService.getUsers().then(data => {
+      this.users = data
+      this.isLoading = false
     })
   }
 
