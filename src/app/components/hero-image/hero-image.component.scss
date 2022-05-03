@@ -1,0 +1,18 @@
+.hero-space {
+    height: 350px;
+}
+
+.image {
+    background-image: url('https://picsum.photos/seed/picsum/1200/300');
+    background-size: cover;
+    background-position: center;
+    height: inherit;
+    width: auto;
+}
+
+.title {
+    display: grid;
+    height: inherit;
+    justify-content: center;
+    align-content: center;
+}

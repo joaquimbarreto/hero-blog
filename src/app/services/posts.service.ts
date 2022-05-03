@@ -12,4 +12,10 @@ export class PostsService {
     return await response.json();
   }
 
+  async getAuthors() {
+    const response = await fetch('https://randomuser.me/api/?results=10');
+    return await response.json();
+  }
+
+
 }

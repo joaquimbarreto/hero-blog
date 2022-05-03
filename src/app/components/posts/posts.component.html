@@ -1,5 +1,8 @@
 <div>
+  <h1>POSTS</h1>
+</div>
+<div *ngIf="!isLoading">
   <mat-list *ngFor="let post of posts">
-    <mat-list-item>{{ post.title }}</mat-list-item>
+    <mat-list-item class="post">{{ post.title }} by {{authors[post.userId - 1].name.first}} {{authors[post.userId - 1].name.last}}</mat-list-item>
   </mat-list>
 </div>
