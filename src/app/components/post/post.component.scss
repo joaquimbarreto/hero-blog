@@ -1,0 +1,17 @@
+.post {
+    margin: 20px;
+}
+
+.post-header {
+    text-transform: capitalize;
+}
+
+.post-body:first-letter {
+    text-transform: capitalize;
+}
+
+.mat-icon {
+    padding: 20px;
+    font-size: 40px;
+    cursor: pointer;
+  }

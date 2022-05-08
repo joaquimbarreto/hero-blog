@@ -3,8 +3,16 @@
 </div>
 <div *ngIf="!isLoading">
   <mat-list *ngFor="let post of posts">
-    <mat-list-item class="post" routerLink="/post/{{ post.id }}">
-      {{ post.title }} by {{ users[post.userId - 1].name }}
+    <mat-list-item class="posts" routerLink="/post/{{ post.id }}">
+      <div class="post-title">
+        <h3>{{ post.title }}</h3>
+      </div>
+      <p>by</p>
+      <div class="post-author">
+        <p>
+          {{ users[post.userId - 1].name }}
+        </p>
+      </div>
     </mat-list-item>
   </mat-list>
 </div>

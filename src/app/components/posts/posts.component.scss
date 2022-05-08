@@ -1,5 +1,14 @@
 .mat-list-item {
     color: black;
     cursor: pointer;
+}
+
+.post-title{
     text-transform: capitalize;
+    margin: 10px;
+}
+
+.post-author{
+    text-transform: capitalize;
+    margin: 10px;
 }
